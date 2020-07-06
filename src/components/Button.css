@@ -1,0 +1,6 @@
+.btn {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}

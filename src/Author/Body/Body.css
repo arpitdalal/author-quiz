@@ -1,0 +1,27 @@
+.body {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+.nothing {
+    background: transparent;
+}
+
+.green {
+    background: green;
+}
+
+.red {
+    background: red;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
