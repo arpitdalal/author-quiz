@@ -28,7 +28,6 @@ export default class Home extends React.Component {
   ];
 
   getOptions = () => {
-    console.log(this.state.quesNo);
     return this.questions[this.state.quesNo];
   };
 
@@ -53,7 +52,7 @@ export default class Home extends React.Component {
     return (
       <React.Fragment>
         <Header />
-        <Body options={this.getOptions()} answerClicked={this.showButton} wrongOptionClicked={this.hideButton} />
+        <Body questions={this.getOptions()} answerClicked={this.showButton} wrongOptionClicked={this.hideButton} />
         <Button onClick={this.updateQues} toggle={this.state.btn} />
       </React.Fragment>
     );
