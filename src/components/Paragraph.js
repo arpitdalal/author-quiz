@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Paragraph.css';
 
 export default class Paragraph extends React.Component {

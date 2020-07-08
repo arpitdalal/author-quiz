@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Body from './Body/Body';
 import Header from './Header/Header';
@@ -12,14 +12,14 @@ export default class Home extends React.Component {
 
   questions = [
     {
-      options: [ 'MacBeth', 'The Shinning', 'Heart of Darkness', 'Hamlet' ],
+      options: ['MacBeth', 'The Shinning', 'Heart of Darkness', 'Hamlet'],
       answer: 'The Shinning',
       bgColor: 'nothing',
       imgUrl:
         'https://images.unsplash.com/photo-1531837763904-5d3cb2632ea3?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80'
     },
     {
-      options: [ 'The Shinning', 'The Adventures of Huckleberry Finn', 'MacBeth', 'IT' ],
+      options: ['The Shinning', 'The Adventures of Huckleberry Finn', 'MacBeth', 'IT'],
       answer: 'The Adventures of Huckleberry Finn',
       bgColor: 'nothing',
       imgUrl:

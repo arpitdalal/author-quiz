@@ -11,7 +11,7 @@ export default class Body extends React.Component {
   }
 
   onOptionClick = (e) => {
-    if (this.props.options.answer == e.target.innerText) {
+    if (this.props.options.answer === e.target.innerText) {
       this.bgColor = '';
       this.setState({ color: 'green' });
       this.props.answerClicked();
