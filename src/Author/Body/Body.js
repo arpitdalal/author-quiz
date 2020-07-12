@@ -6,23 +6,22 @@ export default class Body extends React.Component {
   constructor(props) {
     super(props);
     this.state = { color: 'nothing' };
-    this.bgColor = this.props.questions.bgColor;
+    this.bgColor = 'nothing';
   }
 
   onOptionClick = (e) => {
+    this.bgColor = '';
     if (this.props.questions.answer === e.target.innerText) {
-      this.bgColor = '';
       this.setState({ color: 'green' });
-      this.props.answerClicked();
+      this.props.answerClicked(true);
     } else {
-      this.bgColor = '';
       this.setState({ color: 'red' });
-      this.props.wrongOptionClicked();
+      this.props.answerClicked(false);
     }
   };
 
   componentDidUpdate() {
-    this.bgColor = this.props.questions.bgColor;
+    this.bgColor = 'nothing';
   }
 
   render() {
